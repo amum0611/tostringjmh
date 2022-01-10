@@ -1,0 +1,103 @@
+# JMH version: 1.34
+# VM version: JDK 11.0.7, Java HotSpot(TM) 64-Bit Server VM, 11.0.7+8-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.7.jdk/Contents/Home/bin/java
+# VM options: -Dfile.encoding=UTF-8 -Duser.country=US -Duser.language=en -Duser.variant
+# Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 1 iterations, 10 s each
+# Measurement: 1 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.poc.Application.apacheToStringBuilder
+
+# Run progress: 0.00% complete, ETA 00:01:20
+# Fork: 1 of 1
+# Warmup Iteration   1: 54014.239 ops/s
+Iteration   1: 45947.632 ops/s
+
+
+Result "com.poc.Application.apacheToStringBuilder":
+  45947.632 ops/s
+
+
+# JMH version: 1.34
+# VM version: JDK 11.0.7, Java HotSpot(TM) 64-Bit Server VM, 11.0.7+8-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.7.jdk/Contents/Home/bin/java
+# VM options: -Dfile.encoding=UTF-8 -Duser.country=US -Duser.language=en -Duser.variant
+# Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 1 iterations, 10 s each
+# Measurement: 1 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.poc.Application.jackson
+
+# Run progress: 25.00% complete, ETA 00:01:02
+# Fork: 1 of 1
+# Warmup Iteration   1: 579963.830 ops/s
+Iteration   1: 596168.809 ops/s
+
+
+Result "com.poc.Application.jackson":
+  596168.809 ops/s
+
+
+# JMH version: 1.34
+# VM version: JDK 11.0.7, Java HotSpot(TM) 64-Bit Server VM, 11.0.7+8-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.7.jdk/Contents/Home/bin/java
+# VM options: -Dfile.encoding=UTF-8 -Duser.country=US -Duser.language=en -Duser.variant
+# Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 1 iterations, 10 s each
+# Measurement: 1 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.poc.Application.stringBuilder
+
+# Run progress: 50.00% complete, ETA 00:00:41
+# Fork: 1 of 1
+# Warmup Iteration   1: 542933.059 ops/s
+Iteration   1: 579110.282 ops/s
+
+
+Result "com.poc.Application.stringBuilder":
+  579110.282 ops/s
+
+
+# JMH version: 1.34
+# VM version: JDK 11.0.7, Java HotSpot(TM) 64-Bit Server VM, 11.0.7+8-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.7.jdk/Contents/Home/bin/java
+# VM options: -Dfile.encoding=UTF-8 -Duser.country=US -Duser.language=en -Duser.variant
+# Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 1 iterations, 10 s each
+# Measurement: 1 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.poc.Application.stringConcatenation
+
+# Run progress: 75.00% complete, ETA 00:00:20
+# Fork: 1 of 1
+# Warmup Iteration   1: 2019223.295 ops/s
+Iteration   1: 2266461.012 ops/s
+
+
+Result "com.poc.Application.stringConcatenation":
+  2266461.012 ops/s
+
+
+# Run complete. Total time: 00:01:23
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark                           Mode  Cnt        Score   Error  Units
+Application.apacheToStringBuilder  thrpt         45947.632          ops/s
+Application.jackson                thrpt        596168.809          ops/s
+Application.stringBuilder          thrpt        579110.282          ops/s
+Application.stringConcatenation    thrpt       2266461.012          ops/s
+
+Benchmark result is saved to results.txt

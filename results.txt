@@ -1,0 +1,5 @@
+Benchmark                           Mode  Cnt        Score   Error  Units
+Application.apacheToStringBuilder  thrpt         45947.632          ops/s
+Application.jackson                thrpt        596168.809          ops/s
+Application.stringBuilder          thrpt        579110.282          ops/s
+Application.stringConcatenation    thrpt       2266461.012          ops/s
